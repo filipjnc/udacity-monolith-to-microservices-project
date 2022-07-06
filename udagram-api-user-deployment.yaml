@@ -17,5 +17,10 @@ spec:
       containers:
         - name: udagram-api-user
           image: filipjnc/udagram-api-user:v1
+          envFrom:
+            - secretRef:
+                name: env-secret
+            - configMapRef:
+                name: env-config
           ports:
             - containerPort: 8080

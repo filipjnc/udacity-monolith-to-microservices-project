@@ -3,11 +3,11 @@ kind: ConfigMap
 data:
   AWS_BUCKET: arn:aws:s3:::filipjnc-udacity-monolith-to-microservices
   AWS_PROFILE: default
-  AWS_REGION: eu-east-1
+  AWS_REGION: us-east-1
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: filipjnc-udacity-project-monolith-to-microservices.c9aulstrivzm.us-east-1.rds.amazonaws.com
-  URL: https://084F14412FFD84968DDA41D27B5681AA.gr7.us-east-1.eks.amazonaws.com
-  PORT: "8000"
+  POSTGRES_HOST: udagram-db.c9aulstrivzm.us-east-1.rds.amazonaws.com
+  # URL: https://1902DD8990A5EA99B418B72C37514960.gr7.us-east-1.eks.amazonaws.com
+  PORT: "8080"
 metadata:
   name: env-config
