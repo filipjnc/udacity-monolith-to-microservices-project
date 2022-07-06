@@ -20,14 +20,6 @@ services:
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 50M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   udagram-api-feed:
     image: udagram-api-feed
     volumes:
@@ -42,14 +34,6 @@ services:
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 50M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   frontend:
     image: udagram-frontend:local
     ports:
