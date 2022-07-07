@@ -1,6 +1,6 @@
 # Apply env variables and secrets
-kubectl apply -f aws-secret.yaml
-kubectl apply -f env-secret.yaml
+kubectl apply -f .secrets/aws-secret.yaml
+kubectl apply -f .secrets/env-secret.yaml
 kubectl apply -f env-configmap.yaml
 
 # Deployments
